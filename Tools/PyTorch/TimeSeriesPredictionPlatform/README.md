@@ -312,6 +312,7 @@ Inference takes place after a model has been trained and one wants to run data t
 
 The TSPP supports a few versions of inference, including native inference and NVIDIA Triton deployment. Both use the test_forward function specified in the model config (defaults to forward()) as the forward function.
 
+### Resultados del entranamiento/training
 To launch native inference, one must have a checkpoint directory from a TSPP training call that includes a .hydra directory and a best_checkpoint.zip from training a Neural Net, a populated checkpoints directory from training an XGBoost, or an arima.pkl file from training an ARIMA model.  Then run 
 ```
 python launch_inference.py checkpoint=/path/to/checkpoint/directory
